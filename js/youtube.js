@@ -1,16 +1,24 @@
-// document.getElementById("button").onclick = function(){
-//     document.getElementById("confirm").innerHTML ="Order placed. Check email for confrimation";
-//     document.getElementById("button").style.display = "none";
-// }
+// let username = prompt();
+// username = 5;
+// username = "hello";
+
+// console.log(username);
+
+// let age = 5;
+// console.log(age);
+// console.log(age);
+// console.log(age);
 
 
-let usernames = prompt();
+let age = 50;
+//age = 50;
 
-console.log(usernames);
+let newAge = age;
 
-// This is really important 
-/*
-    This 
-    is a multiline
-    comment
-*/
+let message = "newAge = " + newAge;
+console.log(message);
+
+
+
+//declaraton
+//initialization
