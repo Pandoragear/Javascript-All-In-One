@@ -1,32 +1,12 @@
+let myName = "Andy";
+myName.toUpperCase
 
-    // let x = 5; // number 
-    // let b = "10";
+// myName = new String("myName");
+// myName.toUpperCase();
+// myName = myName.valueOf();
 
-    // x = x + b;
-    // console.log(x);
-
-    // let myName = "Andy";
-
-    // let tacos = null; 
-
-    let person = {
-        name: "Andy",
-        age: 93,
-        favFood: "pizza..",
-        fun: function (){
-                console.log("Yay!");
-        }
-    }
-
-    person.fun();
-    person.age;
-
-
-
-    let now = new Date();
-
-    let grades = [30, 30, 12, 23];
-
-
-//primitives
-//objects
+let yourName = new String ('Claire');
+let age = new Number();
+age.valueOf();
+console.log(typeof (myName));
+console.log(typeof (yourName));
