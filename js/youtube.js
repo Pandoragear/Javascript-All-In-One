@@ -1,18 +1,13 @@
 {
-    var slicesOfPizza = 10;
-    console.log(slicesOfPizza % 4.25);
+    let slicesOfPizza = 10;
+    // slicesOfPizza += 1;
+//     slicesOfPizza ++;
+//     ++slicesOfPizza;
+//     slicesOfPizza --;
+//     console.log(slicesOfPizza);
 
-    var precedence1 = 5 + 3 * 12 - 20 / 10;
-    console.log(precedence1);
+let newPizza = slicesOfPizza++;
+console.log("slicesOfPizza:", slicesOfPizza);
+console.log("newPizza:", newPizza);
 
-    /*
-    
-
-    +
-    -
-    * 
-    /
-    % 
-
-    */
 }
