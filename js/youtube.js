@@ -1,10 +1,18 @@
 {
-    let babies = 9007199254740991
-    console.log(Math.pow(babies, 200));
-    console.log(1/0);
+    var slicesOfPizza = 10;
+    console.log(slicesOfPizza % 4.25);
 
-    // console.log(Number.MAX_SAFE_INTEGER);
-    // console.log(Number.isSafeInteger(babies));
+    var precedence1 = 5 + 3 * 12 - 20 / 10;
+    console.log(precedence1);
 
+    /*
     
+
+    +
+    -
+    * 
+    /
+    % 
+
+    */
 }
