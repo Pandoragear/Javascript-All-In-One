@@ -1,12 +1,10 @@
-let myName = "Andy";
-myName.toUpperCase
+{
+    let babies = 9007199254740991
+    console.log(Math.pow(babies, 200));
+    console.log(1/0);
 
-// myName = new String("myName");
-// myName.toUpperCase();
-// myName = myName.valueOf();
+    // console.log(Number.MAX_SAFE_INTEGER);
+    // console.log(Number.isSafeInteger(babies));
 
-let yourName = new String ('Claire');
-let age = new Number();
-age.valueOf();
-console.log(typeof (myName));
-console.log(typeof (yourName));
+    
+}
