@@ -1,12 +1,32 @@
-{
-    //block 
-    let y = 10;
-    const x = 20;
-    {
-        let y = 6;
-        console.log(y);
+
+    // let x = 5; // number 
+    // let b = "10";
+
+    // x = x + b;
+    // console.log(x);
+
+    // let myName = "Andy";
+
+    // let tacos = null; 
+
+    let person = {
+        name: "Andy",
+        age: 93,
+        favFood: "pizza..",
+        fun: function (){
+                console.log("Yay!");
+        }
     }
 
-    console.log(y);
-    var z = 100;
-}
+    person.fun();
+    person.age;
+
+
+
+    let now = new Date();
+
+    let grades = [30, 30, 12, 23];
+
+
+//primitives
+//objects
