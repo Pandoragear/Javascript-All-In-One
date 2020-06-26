@@ -1,9 +1,15 @@
 {
-  var age = prompt("age?");
-  var name = prompt("name?");
-  if(age < 13 && name === "Caleb" ){
-    console.log("welcome!");
-  } else {
-    console.log("Go Away")
-  };
+  let name = prompt("What is your name");
+
+  switch(name){
+    case "Caleb": 
+    case "Claire": 
+      console.log("Get out Here");
+      break;
+    default: 
+      console.log("I guess you're welcome...");
+      break;
+
+  }
+
 }
