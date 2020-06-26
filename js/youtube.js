@@ -1,12 +1,11 @@
 {
-  let x = 5595989;
-//   x.toString(2);
+  let myName = "Caleb";
+  console.log(`My Name is ${myName}!` );
 
-// console.log(x.toExponential(10));
-console.log(x.toFixed(2));
-console.log(x.toLocaleString());
-console.log(x.toPrecision(2));
-console.log(x.X.valueOf());
+  let test = "lorem ipsum. thi si sa lo \
+tehstin thekns kasl"
+  console.log(test.length);
+
 
 
 }
