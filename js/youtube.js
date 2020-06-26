@@ -1,18 +1,34 @@
 {
-  let content = "lorem ipsum dolor sit amet, consectetur adip";
-  let waiting = 'tick tock ';
+  let position = {
+    x: 10, 
+    y: 20,
+    print: function (){
+      console.log(`X: ${this.x}, y: ${this.y}`);
+    },
 
+    myObject: { 
+      sweetProperty: "hello Friends"
 
-  console.log(content.substring(6, 11));
-  console.log(content.substr(6, 11));
-  console.log(content.slice(6, 11));
-  console.log(content.toUpperCase(6, 11));
-  console.log(content.trim());
+    }
+    
+  }
 
-  console.log(content.split(" "));
+  // let myPosition = position; 
 
-  // console.log(waiting.repeat(70));
+  // console.log(position);
+  // console.log(myPosition);
 
-  
+  // myPosition.x = 15;
+
+  // console.log(position);
+  // console.log(myPosition);
+
+  function print (){
+    console.log(`X: ${this.x}, y: ${this.y}`);  //undefined
+  }
+
+  print();
+  position.print();
+  position.myObject.sweetProperty;
 
 }
