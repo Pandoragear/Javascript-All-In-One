@@ -1,11 +1,10 @@
 {
-  let myName = "Caleb";
-  console.log(`My Name is ${myName}!` );
+  let content = "lorem ipsum dolor sit amet, consectetur adip";
 
-  let test = "lorem ipsum. thi si sa lo \
-tehstin thekns kasl"
-  console.log(test.length);
+  let search1 = "o";
+  let search2 = "number";
 
-
+  console.log(content.lastIndexOf(search1));
+  console.log(content.indexOf(search1, 6));
 
 }
