@@ -1,30 +1,15 @@
 {
-  // while
-  // do while
-  // for loop
+  // let password;
+  // do {
+  //   password = prompt("What is the passcode?");
+  // }while(password.toLowerCase() !== "let me in");
 
-  // Initialization
-  // condition
-  // update
-
-  /*
-  let i = 0; // Initialization
-  while (i < 10){ // condition 
-    //code
-    console.log(i);
-      i++ //update
+  let myString = "Search this string baby";
+  let chartoSearch = "c";
+  for (let i = 0; i <myString.length; i++) {
+    if(myString[i] === chartoSearch){
+      console.log(myString[i] + " is found at index " + i);
+    }
   }
 
-
-  let i = 0; //initialization
-  do{
-    console.log(i); //code
-    i++; //update
-  } while(i < 10); //condition
-
-    */
-
-    for(i = 0; i < 10; i++){
-      console.log(i);
-    }
 }
