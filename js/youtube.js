@@ -1,14 +1,30 @@
 {
-  let name = prompt("What is my name");
-  let points = name === "Andy" ? console.log("10") : console.log("0");
+  // while
+  // do while
+  // for loop
+
+  // Initialization
+  // condition
+  // update
+
+  /*
+  let i = 0; // Initialization
+  while (i < 10){ // condition 
+    //code
+    console.log(i);
+      i++ //update
+  }
 
 
+  let i = 0; //initialization
+  do{
+    console.log(i); //code
+    i++; //update
+  } while(i < 10); //condition
 
+    */
 
-  // if (name === "Caleb") {
-  //   points = 10; 
-  // } else {
-  //   point = 0;
-  // }
-  // console.log(points)
+    for(i = 0; i < 10; i++){
+      console.log(i);
+    }
 }
