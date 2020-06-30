@@ -1,18 +1,11 @@
 {
-  // let password;
-  // do {
-  //   password = prompt("What is the passcode?");
-  // }while(password.toLowerCase() !== "let me in");
-
-  let myString = "cSearch this c string cc baby";
-  let chartoSearch = "c";
-  for (let i = 0; i <myString.length; i++) {
-    if( myString[i] === 'a' || myString[i] === 'e' || 
-        myString[i] === 'i' || myString[i] === 'o' || 
-        myString[i] === 'u'){
-      continue;
+  let d = document.getElementById("destination");
+  for(let i = 0; i < 10; i++) {
+    for(let k = i; k >= 0; k--){
+        d.append(k + " ");
     }
-    console.log(myString[i]);
+    let br = document.createElement("br");
+    d.appendChild(br);
   }
 
 }
