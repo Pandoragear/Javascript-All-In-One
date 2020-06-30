@@ -1,14 +1,10 @@
 {
-  let grades = [];
+  let grades = [1, 2, 3];
+  grades.pop();
 
-  while(true){
-    let input = prompt(" Add a grade");
-    if(input === "q" || input === null){
-      break;
-    }
+  grades.unshift(40);
+  grades.splice(5, 7, 4)
 
-    grades.push(Number(input));
-    console.log(grades);
-  }
+  console.log(grades);
 
 }
