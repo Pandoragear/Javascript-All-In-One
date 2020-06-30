@@ -1,18 +1,28 @@
 {
-  let grades = [];
-  grades[0] = 12;
-  grades [1] = 43
-  grades [2] = 2;
+let grades = [12, 4, 4, 66, 7, 9, 33, 4, 6, 43, 43, 43];
+grades.length = 30;
+grades[34] = 40;
 
-  console.log(grades);
-  grades.length= 300;
-  grades [350] = 30;
+  let largest = grades[0];
 
-  console.log(grades.length);
+  let found = false;
+  let serach = 43;
 
-  // for (let i = 0; i < grades.length; i++) {
-  //   console.log(grades[i]);
+
+  for(let i = 0; i < grades.length; i++){
+    if (grades[i] > largest) {
+      largest = grades[i];
+
+      // found == true;
+      // console.log(grades[i] + " at index " + i);
+      // break;
+    }
+  }
+
+  console.log(largest);
+
+  // if(found){
+  //   //do something
   // }
 
- 
 }
