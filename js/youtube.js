@@ -1,30 +1,10 @@
 {
-  // let myDate = new Date();
-  // let time = Date.now();
-  // console.log(time);
+//  let myDate = Date.parse('12 Jan 195 00:15:54 GMT');
+//  let myDate = new Date(Date.UTC(2012, 11, 15, 10, 10, 10));
+ let myDate = new Date(2012, 10, 12);
+//  myDate.getTimezoneOffset();
+ console.log(myDate.getTimezoneOffset() / 60);
 
-  // let start = Date.now();
 
-  //////////////////////////////////
-
-  // let x = 0;
-  // for(let i = 0; i < 100000; i++){
-  //   x = x + i;
-
-  // }
-
-  // let end = Date.now();
-  // let total = end - start;
-  // console.log(`Time took ${total}`);
-  // console.log(x);
-
-////////////////////////////////////////
-
-  let before = new Date (2020, 10, 15);
-  let after = new Date(2020, 10, 20);
-
-  let oneDay = 1000 * 60 * 60 * 24;
-  let days = (after - before) / oneDay;
-  console.log(days);
 
 }
