@@ -1,12 +1,28 @@
+{
+    function pow(x, y) {
+        let total = 1; 
+        for(let i = 0; i < y; i++) {
+            total *= x;
+        }
+        return total;
+    }
 
+    let coolFunctions  = [pow]; 
+    // console.log(coolFunctions[0] (3, 3));
 
-// var doStuff = function(){
-//     console.log('hey');
-// }
+    let mathFunctions = {
+        power: pow
+    };
 
-// doStuff();
-////////////////////////////////////////////////////////////////
+    console.log(mathFunctions.power(3, 3,))
 
-console.log(x);
+    pow.description = "Will raise numbers to a power";
+    console.log(pow.description);
 
-let x = 10 
+    function returnAFunction(){
+        return pow;
+    }
+
+    console.log(returnAFunction()(10,3));
+
+}
