@@ -1,28 +1,30 @@
 {
+    pow.calculated  = {};
     function pow(x, y) {
+        let stringVersion = x + "^" + y;
+        console.log("string veresion: " + stringVersion);
+
+
+        if(stringVersion in pow.calculated){
+            console.log("found!");
+            return pow.calculated[stringVersion];
+        }
+
+        console.log("CALCULATING!");
+
         let total = 1; 
         for(let i = 0; i < y; i++) {
             total *= x;
         }
+        // pow.calculated.push(total);
+        pow.calculated[stringVersion] = total;
+        console.log(pow.calculated);
         return total;
     }
 
-    let coolFunctions  = [pow]; 
-    // console.log(coolFunctions[0] (3, 3));
-
-    let mathFunctions = {
-        power: pow
-    };
-
-    console.log(mathFunctions.power(3, 3,))
-
-    pow.description = "Will raise numbers to a power";
-    console.log(pow.description);
-
-    function returnAFunction(){
-        return pow;
-    }
-
-    console.log(returnAFunction()(10,3));
+    pow(3,3,);
+    pow(3,3,);
+    pow(10,4);
+    pow(10,3);
 
 }
