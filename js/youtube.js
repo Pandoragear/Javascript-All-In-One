@@ -1,24 +1,12 @@
-{
-// let myFunc = function (x, y) {
-//     let total = 1;
-//     for (let i = 0; i < y; i++) {
-//         total *=x;
-//     }
-//     return total;
+
+
+// var doStuff = function(){
+//     console.log('hey');
 // }
 
-// console.log(myFunc(3,3))
+// doStuff();
+////////////////////////////////////////////////////////////////
 
-///////////////////////////
+console.log(x);
 
-// Hoisting
-
-// console.log(x);
-// var x = 10;
-
-doStuff();
-function doStuff() {
-    console.log("things"); // return things;
-}
-
-}
+let x = 10 
