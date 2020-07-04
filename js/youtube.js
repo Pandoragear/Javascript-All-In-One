@@ -1,30 +1,36 @@
 {
 
-    function pow (x, y, ...extra) {
+let me = {
+    name: "Caleb",
+    outputMe: function(){
         console.log(this);
-        console.log(arguments);
-        console.log(extra);
-        // if(y == undefined) {y = 2}
+        console.log(this.name);
+        
+    }
+};
 
-        // y = typeof y === "undefined" ? 2 : y;
-        let total = 1;
-        for (let i = 0; i < y; i++) {
-            total *= x;
-        }
-        return total;
+     function outputMe(){
+        'use strict';
+    console.log(this);
+
+}
+
+    function outputMeStrict(){
+        'use strict';
+        console.log(this);
     }
 
-    function largest(x, ...extra) {
-        let largest = x;
-        for(let i = 0; i < extra.length; i++) {
-            if(extra[i] > largest){
-                largest = extra[i];
-            }
-        }
-        return largest;
+    function Person(){
+        console.log(this);
+        this.name = "Caleb";
+        console.log(this);
+
     }
 
-    console.log(pow(3, 3, 4, 5, 6, 6));
-    
+    me.outputMe();   //method
+    outputMe();     //function
+    outputMeStrict();  // function strict
+    let person  = new Person(); // ctor
+    console.log(person);
 
 }
