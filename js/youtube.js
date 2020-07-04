@@ -1,13 +1,18 @@
 {
-    function doStuff(input, input2){
-        console.log(input, input2);
-        console.log(this);
-    }
 
-    let me = {name: "Caleb"};
-    let newFunction = doStuff.bind(me, 5, 10);
-
-    newFunction();
+    // function cube(x){
+    //     return x*x*x;
+    // }
 
 
+    // let cubeArrow = x => x*x*x  // single expression 
+
+
+    // multi expression 
+    let cubeArrow = (x) => {
+        console.log("calculating...");
+        return x*x*x;
+    };
+
+    console.log(cubeArrow(5));
 }
