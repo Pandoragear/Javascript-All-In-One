@@ -4,10 +4,10 @@
         console.log(this);
     }
 
-    let args = [5, 10];
-    // doStuff.call("hello", 5, 10); // call 
-    doStuff.apply("hello", [5, 10]); // apply
+    let me = {name: "Caleb"};
+    let newFunction = doStuff.bind(me, 5, 10);
 
+    newFunction();
 
 
 }
