@@ -1,18 +1,18 @@
 {
+    let arrow = () => this;
+    function normal() {
+        return this; 
+    }
 
-    // function cube(x){
-    //     return x*x*x;
-    // }
+    console.log(arrow());
+    console.log(normal());
 
-
-    // let cubeArrow = x => x*x*x  // single expression 
-
-
-    // multi expression 
-    let cubeArrow = (x) => {
-        console.log("calculating...");
-        return x*x*x;
+    let functions = {
+        arrow: arrow, 
+        normal: normal
     };
 
-    console.log(cubeArrow(5));
+    console.log(functions.arrow());
+    console.log(functions.normal());
+
 }
