@@ -9,6 +9,12 @@
     }
     console.log(fact(5));
 
-    // google > Sources > break point 
+    document.getElementById("Lemon")
+    .onclick = () => {console.log("Clicked")};
+
+    document.getElementById("Lemon")
+    .onmouseover = () => {console.log("mouseover")};
+    document.getElementById("Lemon")
+    .onwheel = () => {console.log("Wheel")};
 
 }
