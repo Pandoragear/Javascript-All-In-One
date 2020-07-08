@@ -1,20 +1,28 @@
 {
+    // try{
+    //     doesntexist;
+    // } catch (e){
+    //     console.log(e);
 
-    function fact (x) {
-        let total = 1;
-        for (let i = x; i > 1; i--) {
-            total *= i;
-        }
-        return total;
-    }
-    console.log(fact(5));
+    // } finally{
+    //     console.log("test")
+    // } console.log("after");
 
-    document.getElementById("Lemon")
-    .onclick = () => {console.log("Clicked")};
 
-    document.getElementById("Lemon")
-    .onmouseover = () => {console.log("mouseover")};
-    document.getElementById("Lemon")
-    .onwheel = () => {console.log("Wheel")};
 
+    // function doSomething(){
+    //     throw { error: "Tis broke", code: -1};
+    // }
+
+    // try{
+    //     doSomething();
+    // }catch(e){
+    //     console.log(e);
+    //     console.log("Error");
+    // } finally {
+    //     console.log("Wrapping things up...");
+    // }
+
+
+    throw new Error();
 }
