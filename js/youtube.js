@@ -1,28 +1,15 @@
 {
-    // try{
-    //     doesntexist;
-    // } catch (e){
-    //     console.log(e);
+    function User(name, interest){
+        this.name = name;
+        this.interests = interest;
+                
+    }
 
-    // } finally{
-    //     console.log("test")
-    // } console.log("after");
-
-
-
-    // function doSomething(){
-    //     throw { error: "Tis broke", code: -1};
-    // }
-
-    // try{
-    //     doSomething();
-    // }catch(e){
-    //     console.log(e);
-    //     console.log("Error");
-    // } finally {
-    //     console.log("Wrapping things up...");
-    // }
+    let me = new User("Caleb", ["cooking", "eating", "excercise" ]);
+    let you = new User("Camila" ["hotwheels"]);
+    console.log(me, you);
+    me.membership = "Gold";
+    console.log(me);
 
 
-    throw new Error();
 }
