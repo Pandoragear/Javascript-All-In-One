@@ -1,11 +1,14 @@
 {
 
-    function normal (){
-        return this;
+    function fact (x) {
+        let total = 1;
+        for (let i = x; i > 1; i--) {
+            total *= i;
+        }
+        return total;
     }
-    let arrow = () => this;
-    let newFunc = arrow.bind("hello");
-    console.log(newFunc());
+    console.log(fact(5));
 
-    console.log(normal.bind("this")());
+    // google > Sources > break point 
+
 }
