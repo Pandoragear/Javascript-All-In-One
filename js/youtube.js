@@ -35,9 +35,10 @@
         console.log(e.sayHello());
     });
 
-    console.log("Name in teacher? ", "name" in teacher);
+    console.log(" in teacher? ", teacher.hasOwnProperty("active"));
 
-    console.log("Name in teacher?", teacher.name !== undefined);
+    console.log("in teacher?", "active" in teacher);
+    console.log("in teacher?", teacher.name !== undefined);
 
     console.log(teacher);
 
