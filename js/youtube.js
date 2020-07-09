@@ -14,7 +14,14 @@
 
     let teacher = {
         name: "Caleb Curry",
-        teaching: ["math", "science"]
+        teaching: ["math", "science"],
+        sayHello: function(){
+            let message = this.name + " teaches ";
+            this.teaching.forEach(function(e){
+                message += e+ " ";
+            });
+            return message;
+        }
     };
 
     Object.setPrototypeOf(student, user);
@@ -22,9 +29,11 @@
 
     student.active = true;
 
-    console.log("teacher", teacher.sayHello());
-    console.log("student", student.sayHello());
+    let newMembers = [teacher, student];
 
+    newMembers.forEach(function(e){
+        console.log(e.sayHello());
+    });
 
 
 }
