@@ -24,22 +24,17 @@
         }
     };
 
-    Object.setPrototypeOf(student, user);
-    Object.setPrototypeOf(teacher, user);
+    let properties = [];
 
-    student.active = true;
+    for(let prop in teacher){
+        if(teacher.hasOwnProperty(prop)){
+            properties.push(prop);
+        }
+    }
 
-    let newMembers = [teacher, student];
+    console.log(properties);
 
-    newMembers.forEach(function(e){
-        console.log(e.sayHello());
-    });
 
-    console.log(" in teacher? ", teacher.hasOwnProperty("active"));
 
-    console.log("in teacher?", "active" in teacher);
-    console.log("in teacher?", teacher.name !== undefined);
-
-    console.log(teacher);
 
 }
