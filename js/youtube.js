@@ -1,22 +1,16 @@
 {
-
-    function User(name, interest){
-        this.name = name;
-        this.interests = interest;
-
-                
-    }
-
-    User.prototype.greet = function(){
-        console.log("my name is " + this.name, this.interests);
+    let user = {
+        active: true
     };
 
-    let me =  new User("Caleb", ["cooking", "eating", "excercise" ]);
-    let you = new User("Camila", ["hotwheels"]);
-    console.log(me, you);
+    let teacher = {
+        teaching: ["math", "science"]
+    };
 
-    me.greet();
-    you.greet();
+    Object.setPrototypeOf(teacher, user);
+
+    console.log(teacher);
+
 
 
 }
