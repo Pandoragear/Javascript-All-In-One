@@ -32,5 +32,12 @@
 
 
 
+    function doSomething(user){
+        if (user instanceof User){
+            return 5;
+        }
+        return -1;
+    }
 
+    console.log(doSomething(teacher));
 }
